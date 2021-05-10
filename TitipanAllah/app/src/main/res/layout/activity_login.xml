@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/login1" />
+
+    <EditText
+        android:id="@+id/idlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="220dp"
+        android:hint="Nama Pengguna"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/passlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="220dp"
+        android:layout_below="@+id/idlogin"
+        android:hint="Kata sandi           "
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/passlogin"
+        android:layout_marginLeft="280dp"
+        android:text="Lupa Password"
+        android:textColor="@color/white"
+        android:textSize="10sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passlogin"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#0B0A0A"
+        android:text="Masuk"
+        android:onClick="loginMasuk"/>
+
+
+</RelativeLayout>
